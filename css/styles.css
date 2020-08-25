@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Brutal Type';
+    font-weight: normal;
+    src: url('../assets/Brutal\ Type\ W00\ Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    font-weight: bold;
+    src: url('../assets/Brutal\ Type\ W00\ Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    font-weight: 900;
+    src: url('../assets/Brutal\ Type\ W00\ Black.ttf')
+}
+
+body {
+    font-family: 'Brutal Type', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+h1, h2, h3 {
+    font-weight: 900 !important;
+    text-transform: uppercase;
+}
+
+.btn-brand {
+    color: black;
+    background-color: #FECA00;
+}
+
+.btn-brand-inverse {
+    color: #FECA00;
+    background-color: #000;
+}
+
+.brand-text {
+    color: #FECA00;
+}
+
+.bg-brand {
+    background-color: #FECA00;
+    color: #000;
+}
+
+hr {
+    border-color: #333;
+}
+
+a {
+    color: white;
+}
+
+a:focus, a:hover, a:active {
+    color: #FECA00;
+    text-decoration: none;
+}
+
+.center-black-v {
+    background-image: url('../assets/blackV-01 Top section.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175%;
+}
+
+.yellow-bubble-section {
+    left: -10vw;
+    width: 120vw;
+    height: 100vh;
+    position: absolute;
+    border-top-right-radius: 50% 14%;
+    border-top-left-radius: 50% 14%;
+    background-color: #FECA00;
+    background-image: url('../assets/blackV-01 Top section.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175%;
+}
+
+.features-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-section>p {
+    text-align: left;
+}
+
+.features-section>svg {
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.league-container {
+    background-image: url('../assets/vigtory_transparent.png');
+    background-size: 30%;
+    background-repeat: repeat;
+}
+
+.features-section-desktop {
+    background-color: #FECA00;
+    color: black;
+    background-image: url('../assets/blackV-01 Top section.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175%;
+}
+
+.hero-text {
+    font-size: 2rem;
+}
+
+.hero-header {
+    font-size: 12rem;
+}
+
+.hero-subheader {
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .hero-header {
+        font-size: 8rem;
+    }
+
+    .hero-subheader {
+        font-size: 2rem;
+    }
+}
