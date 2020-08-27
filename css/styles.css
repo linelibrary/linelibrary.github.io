@@ -71,6 +71,13 @@ a:focus, a:hover, a:active {
     background-size: 175%;
 }
 
+.center-black-v-small {
+    background-image: url('../assets/blackV-01 Top section.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .yellow-bubble-section {
     left: -10vw;
     width: 120vw;
