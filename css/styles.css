@@ -32,6 +32,11 @@ h1, h2, h3 {
     background-color: #FECA00;
 }
 
+.btn-brand:disabled {
+    cursor: not-allowed;
+    background-color: #fee480;
+}
+
 .btn-brand-inverse {
     color: #FECA00;
     background-color: #000;
