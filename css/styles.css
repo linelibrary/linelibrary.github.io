@@ -122,6 +122,12 @@ a:focus, a:hover, a:active {
     background-size: 175%;
 }
 
+.circle-svg {
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 .hero-text {
     font-size: 2rem;
 }
