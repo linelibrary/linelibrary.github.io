@@ -158,11 +158,6 @@ a:focus, a:hover, a:active {
     width: 100%;
 }
 
-.signup-container select {
-    border-right: 1rem solid;
-    border-color: rgb(51, 51, 53);
-}
-
 .signup-container input:focus {
     border: none;
     outline: none;
@@ -183,6 +178,10 @@ a:focus, a:hover, a:active {
 
 .signup-container option {
     color: #ddd;
+}
+
+label.error {
+    color: red;
 }
 
 @media only screen and (max-width: 900px) {
