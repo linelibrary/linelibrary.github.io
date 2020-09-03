@@ -30,6 +30,7 @@ h1, h2, h3 {
 .btn-brand {
     color: black;
     background-color: #FECA00;
+    font-weight: bold;
 }
 
 .btn-brand:disabled {
@@ -140,6 +141,38 @@ a:focus, a:hover, a:active {
     font-size: 3rem;
 }
 
+.signup-container {
+    background: #000;
+    color: #ddd;
+    max-width: 100vw;
+}
+
+.signup-container input, .signup-container select {
+    background-color: rgb(51, 51, 53);
+    height: 3rem;
+    line-height: 1.5rem;
+    border: none;
+    border-radius: 2px;
+    color: #ddd;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.signup-container select {
+    border-right: 1rem solid;
+    border-color: rgb(51, 51, 53);
+}
+
+.signup-container input:focus, .signup-container select:focus {
+    border: none;
+    outline: none;
+}
+
+.signup-container .btn-brand {
+    height: 3rem;
+    width: 100%
+}
+
 @media only screen and (max-width: 900px) {
     .hero-text {
         font-size: 1.5rem;
@@ -151,5 +184,9 @@ a:focus, a:hover, a:active {
 
     .hero-subheader {
         font-size: 2rem;
+    }
+
+    .signup-container {
+        max-width: none;
     }
 }
