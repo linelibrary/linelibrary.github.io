@@ -333,9 +333,6 @@
     </div>
     <script>
         $(function() {
-            var confettiSettings = {"target":"confettiCanvas","max":"500","size":"1","animate":true,"props":["square"],"colors":[[254,202,0]],"clock":"35","rotate":false,"width":"","height":"","start_from_edge":false,"respawn":false};
-                            var confetti = new ConfettiGenerator(confettiSettings);
-                            confetti.render();
             $("form[name='signup']").validate({
                 rules: {
                     firstName: "required",
@@ -367,7 +364,9 @@
                             $('#messageInner').text('Thanks for signing up. You\'ll receive an email with a special offer when Vigtory comes to your state.');
                             $('#message').slideDown();
                             $('#success').hide();
-                            
+                            var confettiSettings = {"target":"confettiCanvas","max":"500","size":"1","animate":true,"props":["square"],"colors":[[254,202,0]],"clock":"35","rotate":false,"width":"","height":"","start_from_edge":false,"respawn":false};
+                            var confetti = new ConfettiGenerator(confettiSettings);
+                            confetti.render();
                             $('#submit').attr('disabled', true);
                         },
                         error: () => {
