@@ -201,3 +201,7 @@ label.error {
         max-width: none;
     }
 }
+
+footer small {
+    color: #666
+}
