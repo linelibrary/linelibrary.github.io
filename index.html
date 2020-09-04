@@ -25,6 +25,11 @@
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
+    <script>
+        dataLayer = [{
+            
+        }];
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -380,11 +385,13 @@
                             var confetti = new ConfettiGenerator(confettiSettings);
                             confetti.render();
                             $('#submit').attr('disabled', true);
+                            dataLayer.push({'event': 'prelaunchSignupSuccess'});
                         },
                         error: () => {
                             console.log('error')
                             $('#messageInner').text('There was an error signing you up. Please try again soon.');
                             $('#message').slideDown();
+                            dataLayer.push({'event': 'prelaunchSignupError'});
                         }
                     });
                 },
