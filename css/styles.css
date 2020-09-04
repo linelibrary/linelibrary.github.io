@@ -205,3 +205,11 @@ label.error {
 footer small {
     color: #666
 }
+
+.social-logo {
+    color: #666;
+    fill: #666;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+}
