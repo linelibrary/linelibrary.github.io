@@ -25,11 +25,6 @@
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
-    <script>
-        dataLayer = [{
-            
-        }];
-    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -369,13 +364,14 @@
                     email: "Please enter a valid email address"
                 },
                 submitHandler: function(form) {
-                    const name = $('#name').val();
+                    const firstName = $('#firstName').val();
+                    const lastName = $('#lastName').val();
                     const state = $('#state').val();
                     const email = $('#email').val();
                     $.ajax({
-                        url: 'https://formspree.io/mgenjjza',
+                        url: 'https://formspree.io/mzbjnbbz',
                         method: 'POST',
-                        data: {name, state, email},
+                        data: {firstName, lastName, state, email},
                         dataType: 'json',
                         success: () => {
                             $('#messageInner').text('Thanks for signing up. You\'ll receive an email with a special offer when Vigtory comes to your state.');
