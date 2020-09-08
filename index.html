@@ -54,9 +54,9 @@
             </div>
             <div class="row justify-content-center text-center pb-5">
                 <div class="col-12">
-                    <h5 class="mb-0">Deposit $50 & Get</h5>
-                    <h1 class="display-1 my-0">$150</h1>
-                    <h3 class="mt-0">SIGN UP BONUS</h3>
+                    <h5 class="mb-0">Get An</h5>
+                    <h1 class="hero-header my-0">Exclusive Offer</h1>
+                    <h3 class="mt-0">When We Go Live</h3>
                 </div>
                 <div class="col-12">
                     <button type="button" class="align-self-center btn btn-brand my-4 font-weight-bold" disabled>Coming Soon</button>
@@ -82,10 +82,10 @@
                 <small><p class="text-center">Best Price. Best Experience.</p></small>
             </div>
         </div>
-        <div class="pl-4 my-4">
-            <p class="my-0 hero-text">Deposit $50 & Get</p>
-            <h1 class="hero-header my-0" style="line-height: 0.9;">$150</h1>
-            <h3 class="hero-subheader">SIGN UP BONUS</h3>
+        <div class="pl-4 my-4" style="max-width: 50vw;">
+            <p class="my-0 hero-text">Get An</p>
+            <h1 class="hero-header my-0" style="line-height: 0.9;">Exclusive Offer</h1>
+            <h3 class="hero-subheader">When We Go Live</h3>
             <button type="button" class="align-self-center btn btn-brand my-4" style="font-weight: bold;" disabled>Coming Soon</button>
         </div>
     </div>
@@ -188,6 +188,17 @@
     <div style="position: relative; max-width: 100vw; overflow: hidden;">
         <canvas id="confettiCanvas" style="position: absolute;">test</canvas>
         <div class="pl-4 pr-2 row signup-container py-4">
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-7 pb-1 d-flex justify-content-center">
+                        <img style="width: 100%; height: 100%; max-width: 400px; max-height: 68px;" src="assets/Vigtory-tm.png" />
+                    </div>
+                    <div class="col-12 justify-content-center text-center">
+                        <small class="d-inline-block d-sm-none"><p class="text-center">Best Price. Best Experience.</p></small>
+                        <p class="text-center d-none d-sm-inline-block">Best Price. Best Experience.</p>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <form class="row" name="signup">
                     <div class="col-12">
@@ -268,17 +279,6 @@
         </div>
         <div class="container">
             <div class="row mt-4">
-                <div class="col-12">
-                    <div class="row justify-content-center">
-                        <div class="col-7 pb-1 d-flex justify-content-center">
-                            <img style="width: 100%; height: 100%; max-width: 400px; max-height: 68px;" src="assets/Vigtory-tm.png" />
-                        </div>
-                        <div class="col-12 justify-content-center text-center">
-                            <small class="d-inline-block d-sm-none"><p class="text-center">Best Price. Best Experience.</p></small>
-                            <p class="text-center d-none d-sm-inline-block">Best Price. Best Experience.</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-12 col-sm-3 py-4 justify-content-center d-flex">
                     <img style="height: 100px;" src="assets/NBA Logo.png" />
                 </div>
@@ -293,21 +293,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <hr/>
-            <div class="row">
-                <div class="col-12 col-sm-4">
-                    <h1 class="brand-text text-center display-1 mb-0">$150</h1>
-                </div>
-                <div class="col-12 col-sm-4 my-auto d-flex justify-content-center">
-                    <h3 class="brand-text text-left">Sign Up Bonus</h3>
-                </div>
-                <div class="col-12 col-sm-4 d-flex justify-content-center">
-                    <button type="button" class="align-self-center btn btn-brand my-4" style="font-weight: bold;" disabled>Coming Soon</button>
-                </div>
-            </div>
-            <hr/>
-        </div>
+        
         <footer class="container">
             <div class="row">
                 <div class="col-12 col-sm-4 d-flex justify-content-center my-3">
@@ -383,13 +369,14 @@
                         data: {firstName, lastName, state, email},
                         dataType: 'json',
                         success: () => {
-                            $('#messageInner').text('Thanks for signing up. You\'ll receive an email with a special offer when Vigtory comes to your state.');
+                            $('#messageInner').text('Thanks for signing up! You\'ll receive an email with a special offer when Vigtory comes to your state.');
+                            $('#messageInner').addClass('success-message');
                             $('#message').slideDown();
                             $('#success').hide();
-                            var confettiSettings = {"target":"confettiCanvas","max":"500","size":"1","animate":true,"props":["square"],"colors":[[254,202,0]],"clock":"35","rotate":false,"width":"","height":"","start_from_edge":false,"respawn":false};
+                            $('#submit').attr('disabled', true);
+                            var confettiSettings = {"target":"confettiCanvas","max":"350","size":"1","animate":true,"props":["square"],"colors":[[254,202,0]],"clock":"35","rotate":false,"width":"","height":"","start_from_edge":false,"respawn":false};
                             var confetti = new ConfettiGenerator(confettiSettings);
                             confetti.render();
-                            $('#submit').attr('disabled', true);
                             dataLayer.push({'event': 'prelaunchSignupSuccess'});
                         },
                         error: () => {

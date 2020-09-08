@@ -24,7 +24,6 @@ body {
 
 h1, h2, h3 {
     font-weight: 900 !important;
-    text-transform: uppercase;
 }
 
 .btn-brand {
@@ -134,7 +133,8 @@ a:focus, a:hover, a:active {
 }
 
 .hero-header {
-    font-size: 12rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
 .hero-subheader {
@@ -200,6 +200,11 @@ label.error {
     .signup-container {
         max-width: none;
     }
+
+    .hero-header {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+    }
 }
 
 footer small {
@@ -212,4 +217,8 @@ footer small {
     height: 40px;
     width: 40px;
     margin: 0 10px;
+}
+
+.success-message {
+    font-size: 2rem;
 }
