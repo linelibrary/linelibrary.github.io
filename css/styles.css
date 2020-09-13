@@ -287,6 +287,7 @@ footer small {
 
 .seen-on-card .article-text {
     max-height: 150px;
+    color: #ddd;
     display: -webkit-box;
     -webkit-box-orient: vertical;
  
