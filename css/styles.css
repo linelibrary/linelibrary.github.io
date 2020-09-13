@@ -215,6 +215,10 @@ label.error {
         font-size: 3.5rem;
         text-transform: uppercase;
     }
+
+    .notification-header {
+        font-size: 0.9rem;
+    }
 }
 
 footer small {
