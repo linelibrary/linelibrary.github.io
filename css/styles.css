@@ -304,3 +304,14 @@ select {
 ::placeholder {
     color: gray;
 }
+
+.seen-on-logos img {
+    width: calc(100% - 30px);
+}
+
+.seen-on-logos .background-logo {
+    width: 100%;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
