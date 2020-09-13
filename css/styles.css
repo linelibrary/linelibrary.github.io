@@ -239,6 +239,8 @@ footer small {
 
 .seen-on {
     background-color: #222225;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .seen-on-card {
