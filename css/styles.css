@@ -232,3 +232,74 @@ footer small {
 .success-message {
     font-size: 2rem;
 }
+
+.seen-on {
+    background-color: #222225;
+}
+
+.seen-on-card {
+    padding: 10px 20px;
+    background-color: #333335;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 4px 6px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.seen-on-card:hover {
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.seen-on-card:focus {
+    color: white;
+}
+
+.seen-on-card-header {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.seen-on-card .article {
+    color: #ccc;
+    font-size:0.8rem;
+}
+
+.seen-on-card .date {
+    color: #666;
+    font-size:0.8rem;
+}
+
+.seen-on-card .author {
+    color: #ccc;
+    font-size:0.8rem;
+    margin-left: auto;
+}
+
+.seen-on-card hr {
+    border-color: #555;
+    margin: 2px 0;
+}
+
+.seen-on-card .article-text {
+    max-height: 150px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+ 
+    /* to specify the number of lines you want the text to run through... */
+    -webkit-line-clamp: 4;
+    /* hide the overflowing text, i.e, texts that did not fit in to the box */
+    overflow: hidden;
+}
+
+.seen-on-card .article-text:hover {
+
+}
+
+.tan-logo-text {
+    color: black;
+}
