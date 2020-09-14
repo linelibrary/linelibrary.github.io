@@ -192,6 +192,7 @@ label.error {
     .hero-subheader {
         font-size: 2.4rem;
     }
+    
 }
 
 @media only screen and (max-width: 576px) {
@@ -270,6 +271,11 @@ footer small {
     margin: 15px 0;
 }
 
+.seen-on-card-header img {
+    height: 27px;
+    width: auto;
+}
+
 .seen-on-card .article {
     color: #ccc;
     font-size:0.8rem;
@@ -312,7 +318,13 @@ select {
 }
 
 .seen-on-logos img {
-    width: calc(100% - 30px);
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.seen-on-logos>a {
+    max-height: 75px;
 }
 
 .seen-on-logos .background-logo {
