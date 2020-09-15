@@ -324,6 +324,7 @@ select {
 }
 
 .seen-on-logos>a {
+    margin-top: 20px;
     max-height: 75px;
 }
 
